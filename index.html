@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nablasol</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!--   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <nav class="nav">
+        <a href="index.html"><img src="rocket.png" alt="img" /></a>
+        <div class="nav-links">
+          <ul id="navlinks">
+            <li><a href="#" onClick="Red()" id="red">Red</a></li>
+            <li><a href="#" onClick="Blue()" id="blue">Blue</a></li>
+            <li><a href="#" onClick="Green()" id="green">Green</a></li>
+            <li><a href="#" onClick="Yellow()" id="yellow">Yellow</a></li>
+            <li><a href="#" onClick="Pink()" id="pink">Pink</a></li>
+            <li><a href="#" onClick="Purple()" id="purple">Purple</a></li>
+            <i class="fa fa-times" onClick="hideMenu()"></i>
+          </ul>
+          <i class="fa fa-bars" onClick="showMenu()"></i>
+        </div>
+      </nav>
+    </div>
+    <div class="bg" id="bgd">
+      <p id="title">
+        <span id="title-i">I</span><i class="fa fa-heart fa-3x"></i
+        ><span style="margin-left: 33px">Color</span>
+      </p>
+      <p id="content">
+        Color really isn't that difficult to get right,if you know where to
+        start. <br />
+        <p id="content-p">Learn by doing and you'll be a master in no time.</p>
+      </p>
+      <button id="button" onclick="Openwindow()">Over to you</button>
+    </div>
+    <div class="discription">
+      <div class="col" id="col-1">
+        <img src="iconblue.png" />
+        <h3>Blue</h3>
+        <p>
+          Blue is the color of the sky and sea. It is often associated with
+          depth and stability. It symbolizes trust, loyalty, wisdom, confidence,
+          intelligence, faith, truth and heaven
+        </p>
+      </div>
+      <div class="col" id="col-2">
+        <img src="icongreen.png" />
+        <h3>Green</h3>
+        <p>
+          Green is the color of nature. It symbolizes growth, harmony, freshness
+          and fertility. Green has strong emotional correspondence with safety.
+        </p>
+      </div>
+      <div class="col" id="col-3">
+        <img src="iconred.png" />
+        <h3>Red</h3>
+        <p>
+          Red is the color of fire and blood, so it is associated with energy,
+          war, danger, strength, power, determination as well as passion, desire
+          and love.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var navLinks = document.getElementById("navlinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-160px";
+      }
+      function Red() {
+        document.getElementById("bgd").style.backgroundColor = "red";
+      }
+      function Blue() {
+        document.getElementById("bgd").style.backgroundColor = "blue";
+      }
+      function Green() {
+        document.getElementById("bgd").style.backgroundColor = "green";
+      }
+      function Yellow() {
+        document.getElementById("bgd").style.backgroundColor = "yellow";
+      }
+      function Pink() {
+        document.getElementById("bgd").style.backgroundColor = "pink";
+      }
+      function Purple() {
+        document.getElementById("bgd").style.backgroundColor = "purple";
+      }
+      function Openwindow() {
+        alert("Thank You");
+      }
+    </script>
+  </body>
+</html>
